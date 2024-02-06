@@ -1,8 +1,4 @@
 import { Navigate } from "react-router-dom";
-import Loader from "../components/Loader";
-import classes from "./HaveUser.module.css";
-import { useQuery } from "@tanstack/react-query";
-import { checkUserIsLogin } from "../util/userApi";
 import { getLocalToken } from "../util/audentication";
 
 export default function HaveUser({ children }: { children: React.ReactNode }) {
