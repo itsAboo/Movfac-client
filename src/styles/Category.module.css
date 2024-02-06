@@ -1,0 +1,13 @@
+.container {
+  background-color: black;
+  padding-top: 60px;
+  color: white;
+  position: relative;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

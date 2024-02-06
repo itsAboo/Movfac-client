@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h2 {
+  margin-bottom: 10px;
+  color: rgb(230, 230, 230);
+  font-size: 1.25rem;
+}
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 450px;
+}
+.form-group label {
+  color: rgb(230, 230, 230);
+}
+.form-group .profile-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(120, 120, 120);
+  border-radius: 2px;
+  font-size: 1.25rem;
+  padding: 5px 0;
+  width: 100%;
+  color: white;
+}
+.form-group .profile-input:focus {
+  border-color: white;
+}
+
+.form-group .profile-input:disabled {
+  color: rgb(178, 178, 178);
+  &:hover {
+    cursor: no-drop;
+  }
+}
+.profile-form button {
+  cursor: pointer;
+  width: 100px;
+  padding: 10px;
+  background: transparent;
+  color: #16ff00;
+  border-radius: 5px;
+  border: 2px solid #16ff00;
+  align-self: flex-end;
+  font-size: 1rem;
+}
+.profile-form button:hover {
+  color: white;
+  background-color: #16ff00;
+}
+
+.profile-form button:disabled {
+  cursor: no-drop;
+  background: transparent;
+  color: #095801;
+  border-radius: 5px;
+  border: 2px solid #095801;
+  align-self: flex-end;
+  font-size: 1rem;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 575px) {
+  .container {
+    width: 300px;
+  }
+  .container h2 {
+    margin-bottom: 0px;
+    color: rgb(230, 230, 230);
+    font-size: 1rem;
+  }
+  .profile-form {
+    width: 100%;
+  }
+  .form-group {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+  .form-group label {
+    font-size: 0.75rem;
+  }
+  .form-group .profile-input {
+    font-size: 1rem;
+  }
+  .profile-form button {
+    margin-top: 5px;
+    width: 70px;
+    padding: 5px;
+    font-size: 0.75rem;
+    background-color: #16ff00;
+    color: white;
+  }
+  .profile-form button:disabled {
+    margin-top: 5px;
+    align-self: flex-end;
+    font-size: 0.75rem;
+  }
+  .profile-form button:hover {
+    color: white;
+    background-color: #13de00;
+  }
+  .profile-form button:disabled:hover {
+    background-color: transparent;
+    color: #095801;
+  }
+}

@@ -1,0 +1,89 @@
+.container {
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5555;
+}
+.logo {
+  width: 200px;
+}
+.logo img {
+  width: 100%;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  margin: 0 1rem;
+  list-style: none;
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+.nav-item a:hover {
+  color: rgb(236, 236, 236);
+}
+.nav-item .login {
+  background-color: #16ff00;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #000000;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #13e300;
+    color: #000000;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .container {
+    padding: 1rem;
+  }
+  .logo {
+    width: 150px;
+  }
+  .nav-item .login {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+  }
+  .nav-item a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding: 0.75rem;
+  }
+  .logo {
+    width: 150px;
+  }
+  .nav-item .login {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+  }
+  .nav-item a {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0.75rem;
+  }
+  .logo {
+    width: 150px;
+  }
+  .nav-item .login {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+  }
+}

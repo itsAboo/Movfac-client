@@ -1,0 +1,7 @@
+.loader{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10rem;
+}

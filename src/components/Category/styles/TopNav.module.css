@@ -1,0 +1,229 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+  background-color: #082b40;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px,
+    rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 555;
+}
+.dropdown-list {
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dropdown-icon {
+  font-size: 0.6rem;
+  padding-left: 5px;
+  padding-top: 2.5px;
+}
+.dropdown-item {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 5555;
+  &:hover {
+    background-color: #001e33;
+  }
+}
+.dropdown-item a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown-content {
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  left: 0;
+}
+.dropdown-content li {
+  list-style: none;
+  font-size: 1rem;
+  width: 150px;
+  background-color: #004b7d;
+  padding: 8px 15px;
+  text-align: start;
+  border: none;
+  outline: none;
+}
+.dropdown-content li a:hover {
+  color: rgb(183, 183, 183);
+}
+.search {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.search .search-input {
+  font-size: 1rem;
+  color: white;
+  height: 100%;
+  width: 270px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px 0 0 15px;
+  padding: 0 10px;
+}
+.search .search-input:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.search .search-input:focus + button {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.search button {
+  cursor: pointer;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  border-radius: 0 15px 15px 0;
+}
+.mobile-dropdown-list {
+  background-color: #082b40;
+  width: 100%;
+  position: absolute;
+  padding: 0 1rem;
+  list-style: none;
+  top: 40px;
+  left: 0;
+  z-index: 555;
+}
+.mobile-dropdown-item {
+  padding: 7px 0;
+  font-size: 1rem;
+}
+.mobile-dropdown-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.mobile-dropdown-content {
+  margin-top: 5px;
+}
+.mobile-dropdown-content li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+.mobile-dropdown-content li a {
+  font-size: 0.75rem;
+}
+.mobile-dropdown-icon {
+  font-size: 0.8rem;
+}
+.hamburger-btn {
+  background-color: green;
+  width: 35px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+.hamburger {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.nav-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+@media only screen and (max-width: 575px) {
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .dropdown-list {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+  .search {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search .search-input {
+    font-size: 0.75rem;
+    color: white;
+    height: 30px;
+    width: 100%;
+  }
+  .search .search-input:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .search .search-input:focus + button {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .search button {
+    cursor: pointer;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    border-radius: 0 15px 15px 0;
+  }
+  .search button span {
+    color: rgb(189, 189, 189);
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .dropdown-list {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+  .search {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search .search-input {
+    font-size: 0.75rem;
+    color: white;
+    height: 30px;
+    width: 100%;
+  }
+  .search .search-input:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .search .search-input:focus + button {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .search button {
+    cursor: pointer;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    border-radius: 0 15px 15px 0;
+  }
+  .search button span {
+    color: rgb(189, 189, 189);
+  }
+}

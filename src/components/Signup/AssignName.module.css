@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+.success-container {
+  margin-top: 10rem;
+  width: 450px;
+  height: 350px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.success-container img {
+  width: 10%;
+}
+.success-container .success-header {
+  text-align: center;
+}
+.success-container .success-content {
+  text-align: center;
+}
+.success-container .success-content h1 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.success-container .form-group {
+  width: 350px;
+}
+.success-container button {
+  width: 350px;
+  text-align: center;
+  background-color: #13e400;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+.success-container button:hover {
+  background-color: #11c800;
+}
+.success-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  height: 70px;
+  position: relative;
+}
+.success-content input {
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0 10%;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.success-content label {
+  color: rgb(201, 201, 201);
+  font-size: 0.75rem;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  z-index: 5;
+}
+input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid #14ea00;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+}
+.success-content .input-err{
+    border-bottom: 1px solid red;
+}
+.success-content .err-text {
+    position: absolute;
+    color: red;
+    font-size: 0.75rem;
+    text-align: start;
+    bottom: -25%;
+    left: 10%;
+}

@@ -1,0 +1,137 @@
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plan-out-container {
+  padding-top: 60px;
+  background-color: black;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  margin: 30px 10px;
+  text-align: start;
+  color: white;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desc {
+  color: rgb(194, 194, 194);
+  text-align: left;
+  font-size: 12px;
+  margin-top: 60px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.btn button {
+  width: 400px;
+  text-align: center;
+  background-color: #13e400;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn button:hover {
+  background-color: #11c800;
+}
+.pre-plan-container {
+  margin-top: 10rem;
+  width: 450px;
+  height: 350px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.pre-plan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pre-plan-content h1 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.pre-plan-description {
+  display: flex;
+  flex-direction: column;
+}
+.pre-plan-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.pre-plan-item p {
+  padding-left: 10px;
+  font-size: 1.25rem;
+}
+.pre-plan-description img {
+  width: 5%;
+}
+.pre-plan-container button {
+  width: 350px;
+  text-align: center;
+  background-color: #13e400;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+.pre-plan-container button:hover {
+  background-color: #11c800;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+}
+.success-container {
+  margin-top: 60px;
+  padding-top: 60px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.success-container img {
+  width: 10%;
+}
+.success-container a {
+  width: 350px;
+  text-align: center;
+  background-color: #13e400;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+.success-container a:hover {
+  background-color: #11c800;
+}

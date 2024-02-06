@@ -1,0 +1,148 @@
+.media {
+  color: white;
+}
+.media a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+.media-main {
+  width: 100%;
+  height: 320px;
+}
+.media-img {
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+  transition: transform 0.3s ease-out;
+}
+.media-subtitle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(15, 98, 146, 1) 0%,
+    rgba(22, 255, 0, 1) 100%
+  );
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  z-index: 5;
+}
+.media-subtitle p {
+  font-size: 0.75rem;
+}
+.media-title {
+  padding: 0 5px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.media-overlay {
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  z-index: 1;
+}
+.media:hover .media-overlay {
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+}
+.media:hover .media-img {
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 575px) {
+  .media-main {
+    height: 220px;
+  }
+  .media-img {
+    height: 220px;
+  }
+  .media-subtitle {
+    padding: 5px;
+  }
+  .media-subtitle p {
+    font-size: 0.5rem;
+  }
+  .media-title {
+    font-size: 0.75rem;
+  }
+  .media-overlay {
+    height: 220px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .media-main {
+    height: 250px;
+  }
+  .media-img {
+    height: 250px;
+  }
+  .media-subtitle {
+    padding: 5px;
+  }
+  .media-subtitle p {
+    font-size: 0.5rem;
+  }
+  .media-title {
+    font-size: 0.75rem;
+  }
+  .media-overlay {
+    height: 250px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .media-main {
+    height: 270px;
+  }
+  .media-img {
+    height: 270px;
+  }
+  .media-subtitle {
+    padding: 5px;
+  }
+  .media-subtitle p {
+    font-size: 0.5rem;
+  }
+  .media-title {
+    font-size: 0.9rem;
+  }
+  .media-overlay {
+    height: 270px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .media-main {
+    height: 290px;
+  }
+  .media-img {
+    height: 290px;
+  }
+  .media-subtitle {
+    padding: 5px;
+  }
+  .media-subtitle p {
+    font-size: 0.6rem;
+  }
+  .media-overlay {
+    height: 290px;
+  }
+}

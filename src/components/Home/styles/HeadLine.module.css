@@ -1,0 +1,309 @@
+.container {
+  width: 100%;
+}
+.headline {
+  width: 100%;
+  position: relative;
+}
+.headline::before {
+  content: "";
+  background-image: linear-gradient(
+    360deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  width: 100%;
+}
+.headline-text {
+  width: 700px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.headline-text h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+.headline-text p {
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.email-box {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.email-box p {
+  color: rgb(169, 169, 169);
+  font-size: 1.25rem;
+}
+.email-input {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.email-input input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.25rem;
+  &:focus {
+    outline: none;
+  }
+}
+.email-input button {
+  width: 300px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 1rem;
+  background-color: #15ff00;
+  color: #000000;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #13e300;
+  }
+}
+.email-input .err-txt {
+  position: absolute;
+  bottom: -25%;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  color: red;
+}
+.email-box a {
+  align-self: center;
+  width: 200px;
+  margin-left: 10px;
+  padding: 0.75rem;
+  background-color: #15ff00;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #13e300;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .bg {
+    height: 400px;
+    object-fit: cover;
+  }
+  .headline-text {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .headline-text h1 {
+    font-size: 2rem;
+  }
+  .headline-text p {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+  .email-input {
+    flex-direction: column;
+  }
+  .email-input input[type="text"] {
+    width: 75%;
+    padding: 7px;
+    font-size: 0.75rem;
+  }
+  .email-input button {
+    width: 100px;
+    padding: 7px;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .email-box {
+    margin-top: 0rem;
+  }
+  .email-box p {
+    color: white;
+  }
+  .headline::before {
+    background-image: linear-gradient(
+      360deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .email-input .err-txt {
+    position: relative;
+    margin: 5px 0;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .bg {
+    height: 400px;
+    object-fit: cover;
+  }
+  .headline-text {
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .headline-text h1 {
+    font-size: 2.25rem;
+  }
+  .headline-text p {
+    font-size: 1.25rem;
+    margin-top: 0rem;
+  }
+  .email-input {
+    flex-direction: column;
+  }
+  .email-input input[type="text"] {
+    width: 75%;
+    padding: 7px;
+    font-size: 0.75rem;
+  }
+  .email-input button {
+    width: 100px;
+    padding: 7px;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .email-box {
+    margin-top: 0rem;
+  }
+  .email-box p {
+    color: white;
+    margin-top: 1rem;
+  }
+  .headline::before {
+    background-image: linear-gradient(
+      360deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .email-input .err-txt {
+    position: relative;
+    margin: 5px 0;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bg {
+    height: 400px;
+    object-fit: cover;
+  }
+  .headline-text {
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .headline-text h1 {
+    font-size: 2.5rem;
+  }
+  .headline-text p {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+  .email-input {
+    flex-direction: column;
+  }
+  .email-input input[type="text"] {
+    width: 75%;
+    padding: 7px;
+    font-size: 1rem;
+  }
+  .email-input button {
+    width: 100px;
+    padding: 7px;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .email-box {
+    margin-top: 0.5rem;
+  }
+  .email-box p {
+    color: white;
+    font-size: 1.25rem;
+  }
+  .headline::before {
+    background-image: linear-gradient(
+      360deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .email-input .err-txt {
+    position: relative;
+    margin: 5px 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .bg {
+    width: 100%;
+  }
+  .headline-text {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -25%);
+    text-align: start;
+  }
+  .headline-text h1 {
+    font-size: 2.5rem;
+  }
+  .headline-text p {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+  .email-input {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .email-input input[type="text"] {
+    width: 70%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  .email-input button {
+    width: 200px;
+    padding: 10px;
+    font-size: 1.25rem;
+  }
+  .email-box {
+    margin-top: 0.5rem;
+  }
+  .email-box p {
+    margin-top: 1rem;
+    color: rgb(220, 220, 220);
+    font-size: 1.25rem;
+  }
+}
