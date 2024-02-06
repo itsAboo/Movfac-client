@@ -19,7 +19,7 @@
 }
 .nav-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .nav-item {
@@ -50,6 +50,9 @@
   }
   .logo {
     width: 150px;
+  }
+  .nav-item {
+    margin: 0 0.5rem;
   }
   .nav-item .login {
     padding: 4px 8px;
