@@ -20,12 +20,12 @@ export default function MyAccount() {
   const { mutate, isPending } = useMutation({
     mutationFn: logout,
     onMutate: () => {
-      queryClient.setQueriesData({ queryKey: ["user"] }, null);
       removeLocalUser();
       removeLocalToken();
       // queryClient.setQueriesData({ queryKey: ["isLoggedIn"] }, false);
     },
     onSuccess: () => {
+      queryClient.setQueriesData({ queryKey: ["user"] }, null);
       // queryClient.removeQueries({ queryKey: ["user"] });
       // queryClient.invalidateQueries({ queryKey: ["isLoggedIn"] });
       navigate("/");
