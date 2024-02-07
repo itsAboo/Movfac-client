@@ -4,11 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function TopNav({
-  hiddenScroll,
-}: {
-  hiddenScroll: (isOpen: boolean) => void;
-}) {
+export default function TopNav() {
   const [hoverName, setHoverName] = useState("");
   const [pickedName, setPickedName] = useState("");
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -36,9 +32,6 @@ export default function TopNav({
     setPickedName("");
     setIsNavOpen((prevOpen) => !prevOpen);
   };
-  useEffect(() => {
-    hiddenScroll(isNavOpen);
-  }, [isNavOpen]);
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -106,7 +99,9 @@ export default function TopNav({
             className={classes["mobile-dropdown-list"]}
           >
             <li className={classes["mobile-dropdown-item"]}>
-              <Link to="/category">ทั้งหมด</Link>
+              <Link onClick={handleCloseNav} to="/category">
+                ทั้งหมด
+              </Link>
             </li>
             {movieCategory.map((e) => (
               <motion.li
