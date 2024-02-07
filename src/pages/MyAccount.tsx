@@ -69,7 +69,7 @@ export default function MyAccount() {
                 <Link to={"/myaccount/profile"}>ติดต่อเรา</Link>
               </li>
               <button onClick={handleLogout} className={classes.btn}>
-                {isPending ? "กำลังออกจากระบบ..." : "ออกจากระบบ"}
+                {isPending ? "ออกจากระบบ..." : "ออกจากระบบ"}
               </button>
             </ul>
           </div>
