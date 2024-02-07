@@ -111,7 +111,8 @@ input:focus {
     padding: 1rem;
   }
   .title h1 {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
   }
   .logo {
     width: 150px;
@@ -120,24 +121,25 @@ input:focus {
     height: 50px;
   }
   .form-group input {
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 0 5%;
     padding-top: 20px;
     padding-bottom: 5px;
   }
   .form-group label {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     left: 5%;
   }
   .desc {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   .btn button {
     height: 40px;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .err-txt {
-    font-size: 0.6rem;
+    margin-top: 3px;
+    font-size: 0.75rem;
     left: 5%;
   }
   .eye-icon {
