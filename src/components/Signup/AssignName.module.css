@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  min-height: 100vh;
 }
 .success-container {
   margin-top: 10rem;
@@ -78,18 +78,96 @@ input:focus {
   background-color: rgba(255, 255, 255, 0.2);
   border-bottom: 2px solid #14ea00;
 }
-.loader{
-    display: flex;
-    justify-content: center;
+.loader {
+  display: flex;
+  justify-content: center;
 }
-.success-content .input-err{
-    border-bottom: 1px solid red;
+.success-content .input-err {
+  border-bottom: 1px solid red;
 }
 .success-content .err-text {
-    position: absolute;
-    color: red;
+  position: absolute;
+  color: red;
+  font-size: 0.75rem;
+  text-align: start;
+  bottom: -25%;
+  left: 10%;
+}
+@media only screen and (max-width: 575px) {
+  .container {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .success-container {
+    margin-top: 5rem;
+    width: 100%;
+    height: 350px;
+  }
+  .success-container .success-content h1 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+  .success-container .form-group {
+    width: 100%;
+  }
+  .success-container button {
+    width: 300px;
+    font-size: 1.25rem;
+  }
+  .success-content {
+    height: auto;
+    width: 300px;
+  }
+  .success-content label {
+    color: rgb(201, 201, 201);
     font-size: 0.75rem;
-    text-align: start;
-    bottom: -25%;
+    position: absolute;
     left: 10%;
+    top: 15%;
+    z-index: 5;
+  }
+  .success-content input {
+    width: 300px;
+    align-self: center;
+  }
+  .success-content .err-text {
+    bottom: -35%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .success-container {
+    margin-top: 5rem;
+    width: 100%;
+    height: 350px;
+  }
+  .success-container .success-content h1 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+  .success-container .form-group {
+    width: 100%;
+  }
+  .success-container button {
+    width: 320px;
+    font-size: 1.25rem;
+  }
+  .success-content {
+    height: auto;
+    width: 320px;
+  }
+  .success-content label {
+    color: rgb(201, 201, 201);
+    font-size: 0.75rem;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    z-index: 5;
+  }
+  .success-content input {
+    width: 320px;
+    align-self: center;
+  }
+  .success-content .err-text {
+    bottom: -35%;
+  }
 }

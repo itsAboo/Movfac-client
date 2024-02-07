@@ -79,9 +79,9 @@ const router = createBrowserRouter([
       {
         path: "/planform",
         element: (
-          <UserRoute>
+
             <Planform />
-          </UserRoute>
+
         ),
       },
       {

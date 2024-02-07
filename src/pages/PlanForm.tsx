@@ -147,7 +147,7 @@ export default function Planform() {
                   </div>
                   <div className={classes["pre-plan-item"]}>
                     <img src={successIcon} alt="icon" />
-                    <p>ไม่มีโฆณา ไม่มีค่าธรรมเนียมเพิ่มเติมตลอดการใช้งาน</p>
+                    <p>ไม่มีโฆณา ไม่มีค่าธรรมเนียมเพิ่มเติม</p>
                   </div>
                 </div>
               </div>
