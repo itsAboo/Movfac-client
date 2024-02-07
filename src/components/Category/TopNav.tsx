@@ -1,13 +1,18 @@
 import classes from "./styles/TopNav.module.css";
 import movieCategory from "../../util/movieCategory";
 import { Link, useNavigate } from "react-router-dom";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function TopNav() {
+export default function TopNav({
+  hiddenScroll,
+}: {
+  hiddenScroll: (isOpen: boolean) => void;
+}) {
   const [hoverName, setHoverName] = useState("");
   const [pickedName, setPickedName] = useState("");
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [windiwWidth, setWindowWidth] = useState(window.innerWidth);
   const searchRef = useRef<HTMLInputElement | null>(null);
   const navigate = useNavigate();
   const onHoverHandle = (name: string) => {
@@ -31,6 +36,21 @@ export default function TopNav() {
     setPickedName("");
     setIsNavOpen((prevOpen) => !prevOpen);
   };
+  useEffect(() => {
+    hiddenScroll(isNavOpen);
+  }, [isNavOpen]);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (windiwWidth > 767) {
+      setIsNavOpen(false);
+    }
+  }, [windiwWidth]);
   return (
     <motion.nav className={classes.container}>
       <button onClick={handleCloseNav} className={classes["hamburger-btn"]}>

@@ -91,6 +91,7 @@
 }
 .mobile-dropdown-list {
   background-color: #082b40;
+  overflow-y: scroll;
   width: 100%;
   position: absolute;
   padding: 0 1rem;
@@ -110,6 +111,7 @@
 }
 .mobile-dropdown-content {
   margin-top: 5px;
+  overflow-y: scroll;
 }
 .mobile-dropdown-content li {
   list-style-type: none;
