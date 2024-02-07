@@ -25,10 +25,10 @@ export default function MyAccount() {
       // queryClient.setQueriesData({ queryKey: ["isLoggedIn"] }, false);
     },
     onSuccess: () => {
-      queryClient.setQueriesData({ queryKey: ["user"] }, null);
       // queryClient.removeQueries({ queryKey: ["user"] });
       // queryClient.invalidateQueries({ queryKey: ["isLoggedIn"] });
       navigate("/");
+      queryClient.setQueriesData({ queryKey: ["user"] }, null);
     },
   });
   const location = useLocation();
