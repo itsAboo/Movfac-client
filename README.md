@@ -1,7 +1,7 @@
 # M Shop E-commerce
 
 ## Deployed
-- Vercel Cloud Live : [https://m-shop1.vercel.app](https://m-shop1.vercel.app)
+- Netlify Cloud Live : [https://movfac.netlify.app](https://movfac.netlify.app)
 
 ## Tech Stack
 - Frontend : ReactJS Typescript , React-query , Framer-motion , Vite
